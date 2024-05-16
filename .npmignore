@@ -3,8 +3,8 @@
 /test-reports/
 junit.xml
 /coverage/
-permissions-backup.acl
-/.mergify.yml
+/.prettierignore
+/.prettierrc.json
 /test/
 /tsconfig.dev.json
 /src/

@@ -78,7 +78,7 @@ project.prettier?.ignoreFile?.addPatterns(
   '**/.github',
   '**/README.md',
   '**/.git',
-  '**/build',
+  '**/build'
 );
 
 project.gitignore.addPatterns('.idea/');
@@ -93,7 +93,7 @@ project.tasks.tryFind('diff')?.reset('cdk diff', { receiveArgs: true });
 project.tasks.tryFind('pre-compile')?.prependSpawn(
   project.tasks.addTask('clean', {
     exec: 'rm -rf dist && rm -rf lib',
-  }),
+  })
 );
 const testTask = project.tasks.tryFind('test');
 testTask?.reset('jest --silent --verbose', { receiveArgs: true });
